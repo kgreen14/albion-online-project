@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Ability from './Ability.js';
 
-class Item extends Component {
-  render() {
-    return (
-      <div>
-        Hello From Item
-        {this.props.match.params.itemId}
-      </div>
-    );
-  }
-}
+
+const Item = (props) => {
+  return (
+    <div>
+      <span>{props.item.name}</span>
+      {props.item.abilities.map((ability, i) => {
+        return <Ability key={i} ability={ability} />
+      })}
+    </div>
+  );
+};
 
 export default Item;

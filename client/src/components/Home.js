@@ -23,7 +23,7 @@ class Home extends Component {
         <h1>BUILDS</h1>
         <form>
           <input type="text"/>
-          <button>New Build</button>
+          <button>Create Build</button>
         </form>
         {console.log(this.state.builds)}
         <ul>
