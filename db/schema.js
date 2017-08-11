@@ -26,11 +26,20 @@ const itemSchema = mongoose.Schema({
   abilities: [abilitySchema]
 });
 
+const buildSchema = mongoose.Schema({
+  user: String,
+  points: Number,
+  title: String,
+  image: String,
+  created: Number,
+  items: [itemSchema],
+});
+
 
 const Item = mongoose.model('Item', itemSchema);
 const Ability = mongoose.model('Ability', abilitySchema);
-
+const Build = mongoose.model('Build', buildSchema)
 
 module.exports = {
-  Item, Ability
+  Item, Ability, Build
 }

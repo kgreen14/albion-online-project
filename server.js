@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const ItemController = require("./controllers/item");
+const BuildController = require("./controllers/build");
 const app = express();
 
 mongoose.Promise = global.Promise;
@@ -21,6 +22,7 @@ connection.on('error', (err) => {
 app.use(bodyParser.json());
 
 app.use('/api/item', ItemController)
+app.use('/api/build', BuildController)
 
 
 app.get('/', (req,res) => {

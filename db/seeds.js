@@ -5,6 +5,7 @@ mongoose.connect(process.env.MONGODB_URI);
 
 var Item = require('../models/item');
 var Ability = require('../models/ability');
+var Build = require('../models/build')
 
 // Use native promises
 mongoose.Promise = global.Promise;
@@ -67,8 +68,16 @@ const claws = new Item({
   abilities: [disembowel, sunderArmor, dash]
 })
 
-
+const assassin = new Build({
+  user: "KingKris",
+  points: 10,
+  title: "Dash Assassin PK",
+//   image: String,
+  created: 081117,
+  items: [claws],
+})
 claws.save().then(() => console.log("Item Saved!"));
+assassin.save().then(() => console.log("Build Saved!"));
 
 
 mongoose.connection.close();
