@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import BuildBoard from './BuildBoard';
+import { BuildStyle } from '../styles/Build';
 
 class Build extends Component {
   constructor(){
@@ -27,20 +28,19 @@ class Build extends Component {
         board: res.data.board
       });
     });
+    
   }
 
   render() {
     return (
       <div>
-      <div>
+        <BuildStyle>
         <h1>My Latest Builds!</h1>
-        </div>
-        <div>
         <h3>Title: {this.state.title}</h3>    
         <h3>Author: {this.state.user}</h3>
         <h3>Votes: {this.state.points}</h3>
-        <BuildBoard board={this.state.board} items={this.state.items} /> 
-      </div>
+        <BuildBoard board={this.state.board} items={this.state.items}/> 
+      </BuildStyle>
       </div>
     );
   }
