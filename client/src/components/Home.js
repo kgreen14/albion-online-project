@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import HomeStyle from '../styles/HomeStyle';
 
 class Home extends Component {
   constructor(){
@@ -19,7 +20,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <HomeStyle>
         <h1>BUILDS</h1>
         <form>
           <input type="text"/>
@@ -30,12 +31,12 @@ class Home extends Component {
           {this.state.builds.map((build, i) => {
             return (
               <li key={i}>
-                <Link to={`/build/${build._id}`}> {build.user}'s Build </Link>
+                <Link to={`/build/${build._id}`}> {build.user}'s {build.title} Build </Link>
               </li>
             );
           })}
         </ul>
-      </div>
+      </HomeStyle>
     );
   }
 }

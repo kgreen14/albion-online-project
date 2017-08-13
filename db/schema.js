@@ -33,6 +33,7 @@ const buildSchema = mongoose.Schema({
   image: String,
   created: Number,
   items: [itemSchema],
+  description: String
 });
 
 

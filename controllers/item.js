@@ -3,13 +3,13 @@ const Item = require("../models/item");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
+router.get("/item", (req, res) => {
   Item.find().then((items) => {
     res.json(items);
   });
 });
 
-router.get("/:id", (req, res) => {
+router.get("/item/:id", (req, res) => {
   Item.findById(req.params.id).then((item) => {
     res.json(item);
   })

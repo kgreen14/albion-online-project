@@ -1,14 +1,14 @@
 import React from 'react';
 import Item from './Item';
-// import { GameBoardStyles } from '../styles/Game'
+import { BuildBoardStyle } from '../styles/BuildBoardStyle';
 
 const BuildBoard = (props) => {
   return (
-    <div>
+    <BuildBoardStyle>
       {props.items.map((item, i) => {
         return <Item key={i} item={item} /> 
       })}
-    </div>
+    </BuildBoardStyle>
   );
 };
 

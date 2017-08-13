@@ -12,7 +12,8 @@ class Build extends Component {
       user: "",
       points: 0,
       items: [],
-      board: []
+      board: [],
+      description: ""
     }
   }
 
@@ -25,7 +26,8 @@ class Build extends Component {
         user: res.data.user,
         points: res.data.points,
         items: res.data.items,
-        board: res.data.board
+        board: res.data.board,
+        description: res.data.description
       });
     });
     
@@ -35,11 +37,14 @@ class Build extends Component {
     return (
       <div>
         <BuildStyle>
-        <h1>My Latest Builds!</h1>
-        <h3>Title: {this.state.title}</h3>    
-        <h3>Author: {this.state.user}</h3>
-        <h3>Votes: {this.state.points}</h3>
-        <BuildBoard board={this.state.board} items={this.state.items}/> 
+        
+        <h2>Title: {this.state.title}</h2>    
+        <h2>Author: {this.state.user}</h2>
+        <h2>Votes: {this.state.points}</h2>
+        
+        <BuildBoard board={this.state.board} items={this.state.items}/>
+        <p>{this.state.description}</p>
+         
       </BuildStyle>
       </div>
     );

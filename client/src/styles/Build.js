@@ -2,34 +2,28 @@ import styled from 'styled-components';
 
 export const BuildStyle = styled.div`
   text-align: center;
-  h1, h3{
-    margin: 4px;
+  padding: 10px;
+  
+  h2 {
+    color: #6B799B;
+    text-decoration: none;
+    margin: 10px 10px;
+    
   }
-`;
-
-export const GameBoardStyles = styled.div`
-  background-color: black;
-  height: 80vh;
-  width: 90vw;
-  margin: 0 auto;
-  color: white;
-`;
-
-export const TileStyle = styled.div`
-  box-sizing: border-box;
-  border: 3px solid black;
-  background: #2A3698;
-  height: 16.67%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-family: 'Lato';
-  font-weight: 700;
-  color: ${props => props.ability ? "#ffff5f" : "FFF"}
-`;
-
-export const CategoryStyle = styled.div`
-  height: 100%;
-  width: 20%;
+  p {
+    box-sizing: border-box;
+    border: 3px solid #101E33;
+    background: #0E1728;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+  }
 `;
