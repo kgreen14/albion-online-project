@@ -243,6 +243,19 @@ const assassin = new Build({
   items: [claws, mageCowl, assassinJacket, hunterShoes],
   description: "New patch gotcha down? Yea we all think the 3 second delay added to auto attacking on dismount is a bit ridiculous, but its time to adapt and overcome! My idea for this build comes from firsthand experience ganking on 3 different builds. I have 3 characters: a double bladed, a claymore, and a warbow character. What makes each of these builds successful in chasing someone down regardless of whether they're target is on mount or foot is their mobility and ability to slow/root. The warbow is reliant on another person to help dismount, while the other two builds can solo pk someone on a mount. Enter the Dash Assassin! High mobility and the ability to root."
 })
+
+disembowel.save().then(() => console.log("Disembowel Saved!"));
+sunderArmor.save().then(() => console.log("Sunder Armor Saved!"));
+dash.save().then(() => console.log("Dash Saved!"));
+mendWounds.save().then(() => console.log("Mend Wounds Saved!"));
+infernoShield.save().then(() => console.log("infernoShield Saved!"));
+ambush.save().then(() => console.log("ambush Saved!"));
+energyRegain.save().then(() => console.log("energyRegain Saved!"));
+forceField.save().then(() => console.log("forceField Saved!"));
+poisonCowl.save().then(() => console.log("poisonCowl Saved!"));
+refreshingSprint.save().then(() => console.log("refreshingSprint Saved!"));
+rush.save().then(() => console.log("rush Saved!"));
+run.save().then(() => console.log("run Saved!"));
 claws.save().then(() => console.log("Claws Saved!"));
 mageCowl.save().then(() => console.log("Mage-Cowl Saved!"));
 assassinJacket.save().then(() => console.log("Assassin-Jacket Saved!"));

@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 
-class Ability extends Component {
-  render() {
-    return (
-      <div>
-        {this.props.ability.name}
-      </div>
-    );
-  }
-}
+const Ability = (props) => {
+  return (
+    <div>
+      <img src={props.ability.image} height="50px" width="50px"/>
+      
+      <Link to={`/ability/${props.ability._id}`}>{props.ability.name}</Link>
+      
+    </div>
+  );
+};
 
 export default Ability;

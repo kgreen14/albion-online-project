@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const AbilityController = require("./controllers/ability");
 const ItemController = require("./controllers/item");
 const BuildController = require("./controllers/build");
 const app = express();
@@ -21,6 +22,7 @@ connection.on('error', (err) => {
 
 app.use(bodyParser.json());
 
+app.use('/api/ability', AbilityController)
 app.use('/api/item', ItemController)
 app.use('/api/build', BuildController)
 
