@@ -4,6 +4,8 @@ import Home from "./components/Home";
 import Build from "./components/Build";
 import NavBar from './styles/NavBar'
 import BodyDiv from './styles/BodyDiv.js'
+import ItemDisplay from "./components/ItemDisplay";
+
 
 
 class App extends Component {
@@ -20,6 +22,8 @@ class App extends Component {
           <BodyDiv>
             <Route exact path="/" component={Home} />
             <Route path="/build/:buildId" component={Build} />
+            <Route path="/item/:itemId" component={ItemDisplay} />
+          
             
           </BodyDiv>
         </div>

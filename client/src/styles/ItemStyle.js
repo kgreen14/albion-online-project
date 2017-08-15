@@ -5,7 +5,7 @@ export const ItemStyle = styled.div`
   border: 3px solid #101E33;
   background: #0E1728;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 1.5rem;
   font-family: 'Open Sans';

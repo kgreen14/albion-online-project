@@ -10,9 +10,11 @@ var Build = require('../models/build')
 // Use native promises
 mongoose.Promise = global.Promise;
 
-
+Build.remove({}, (err) => console.log(err));
 Item.remove({}, (err) => console.log(err));
 Ability.remove({}, (err) => console.log(err));
+
+
 
 const disembowel = new Ability({
   id: 'disembowel',
