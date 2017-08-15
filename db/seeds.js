@@ -25,10 +25,10 @@ const disembowel = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/DISEMBOWEL',
   cooldown: 30,
   casttime: 3,
-  casttype: 'channeled',
+  casttype: 'Channeled',
   range: 0,
   energycost: 15,
-  target: 'enemy'
+  target: 'Enemy'
 });
 const sunderArmor = new Ability({
   id: 'sunder_armor',
@@ -39,10 +39,10 @@ const sunderArmor = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/SUNDERARMOR2',
   cooldown: 3,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 5,
-  target: 'enemy'
+  target: 'Enemy'
 });
 const dash = new Ability({
   id: 'dash',
@@ -53,10 +53,10 @@ const dash = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/GROUNDDASH',
   cooldown: 10,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 11,
   energycost: 8,
-  target: 'area'
+  target: 'Area'
 });
 
 const mendWounds = new Ability({
@@ -68,10 +68,10 @@ const mendWounds = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/OUTOFCOMBATHEAL',
   cooldown: 30,
   casttime: 0,
-  casttype: 'channeled',
+  casttype: 'Channeled',
   range: 0,
   energycost: 0,
-  target: 'self'
+  target: 'Self'
 });
 
 const infernoShield = new Ability({
@@ -83,10 +83,10 @@ const infernoShield = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/FLAMESHIELD',
   cooldown: 60,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'self'
+  target: 'Self'
 });
 
 const ambush = new Ability({
@@ -98,10 +98,10 @@ const ambush = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/AMBUSH',
   cooldown: 40,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'self'
+  target: 'Self'
 });
 
 const energyRegain = new Ability({
@@ -109,14 +109,14 @@ const energyRegain = new Ability({
   name: 'Energy-Regain',
 //   created: Date,
 //   updated: Date,
-  description: "A channeled spell that replenishes Energy greatly.",
+  description: "A Channeled spell that replenishes Energy greatly.",
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/ENERGYBURST_CHANNEL',
   cooldown: 60,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'self'
+  target: 'Self'
 });
 
 const forceField = new Ability({
@@ -128,10 +128,10 @@ const forceField = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/PBAOE_KNOCKBACK',
   cooldown: 30,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'area'
+  target: 'Area'
 });
 
 const poisonCowl = new Ability({
@@ -143,10 +143,10 @@ const poisonCowl = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/WEAPON_DOT',
   cooldown: 30,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'weapon'
+  target: 'Weapon'
 });
 
 const refreshingSprint = new Ability({
@@ -158,10 +158,10 @@ const refreshingSprint = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/SPRINT_CD_REDUCTION',
   cooldown: 30,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'self'
+  target: 'Self'
 });
 
 const rush = new Ability({
@@ -173,10 +173,10 @@ const rush = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/OVERSPRINT',
   cooldown: 30,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'self'
+  target: 'Self'
 });
 
 const run = new Ability({
@@ -188,10 +188,10 @@ const run = new Ability({
   image: 'https://gameinfo.albiononline.com/api/gameinfo/spells/RUN',
   cooldown: 30,
   casttime: 0,
-  casttype: 'instant',
+  casttype: 'Instant',
   range: 0,
   energycost: 0,
-  target: 'self'
+  target: 'Self'
 });
 
 const claws = new Item({

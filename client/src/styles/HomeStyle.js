@@ -4,6 +4,7 @@ const HomeStyle = styled.div`
   background-color: black;
   color: white;
   height: 100%;
+  text-align: center;
   a {
     
     color: white;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Item from './Item';
 import axios from 'axios';
+import { ItemDisplayStyle } from '../styles/ItemDisplayStyle';
 
 class ItemDisplay extends Component {
   constructor(){
@@ -31,13 +32,14 @@ class ItemDisplay extends Component {
   render() {
     return (
       <div>
-        <div>
-        
+        <ItemDisplayStyle>
+          
+        <img src={this.state.image} height="100px" width="100px"/>
         <h2>Item: {this.state.name}</h2>    
-        <h2>Description: {this.state.description}</h2>
-        <img src={this.state.image} height="70px" width="70px"/>
+        <p>Description: {this.state.description}</p>
+        
 
-        </div>
+        </ItemDisplayStyle>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Ability from './Ability';
 import axios from 'axios';
+import { AbilityDisplayStyle } from '../styles/AbilityDisplayStyle';
 
 class AbilityDisplay extends Component {
   constructor(){
@@ -41,21 +42,24 @@ class AbilityDisplay extends Component {
   render() {
     return (
       <div>
-        <div>
-        <img src={this.state.image} height="70px" width="70px"/>
+        <AbilityDisplayStyle>
+        <img src={this.state.image} height="100px" width="100px"/>
+        
         <h2>Ability: {this.state.name}</h2>
-        <li>Cool-Down: {this.state.cooldown} seconds</li>
-        <li>Cast Type: {this.state.casttype}</li>  
-        <li>Cast Time: {this.state.casttime} seconds</li>
-        <li>Range: {this.state.range}m</li>
-        <li>Energy Cost: {this.state.energycost}</li>
-        <li>Target: {this.state.target}</li>
+        <span>
+        <span>Cool-Down: {this.state.cooldown} seconds</span>
+        <span>Cast Type: {this.state.casttype}</span>  
+        <span>Cast Time: {this.state.casttime} seconds</span>
+        <span>Range: {this.state.range}m</span>
+        <span>Energy Cost: {this.state.energycost}</span>
+        <span>Target: {this.state.target}</span>
+        </span>
         
         <p>Description: {this.state.description}</p>
         
         
 
-        </div>
+        </AbilityDisplayStyle>
       </div>
     );
   }

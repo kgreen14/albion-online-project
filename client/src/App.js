@@ -30,7 +30,11 @@ class App extends Component {
           
             
           </BodyDiv>
+        <NavBar>
+            <span>Made By: Kris Green</span>
+        </NavBar>  
         </div>
+        
       </Router>
     );
   }

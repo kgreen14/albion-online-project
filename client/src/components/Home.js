@@ -23,16 +23,16 @@ class Home extends Component {
       <HomeStyle>
         <h1>BUILDS</h1>
         <form>
-          <input type="text"/>
+          {/* <input type="text"/> */}
           <button>Create Build</button>
         </form>
         {console.log(this.state.builds)}
         <ul>
           {this.state.builds.map((build, i) => {
             return (
-              <li key={i}>
+              <div key={i}>
                 <Link to={`/build/${build._id}`}> {build.user}'s {build.title} Build </Link>
-              </li>
+              </div>
             );
           })}
         </ul>
