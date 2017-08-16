@@ -36,5 +36,5 @@ This app, titled AO Builds is designed to allow a user to create a "build" in th
 ![logo](http://i.imgur.com/vPVyOYh.png "Crowd ERD")
 
 ## Links:
-### Link to the Deployed App: [HEROKU APP](https://crowdedpro.herokuapp.com/)
+### Link to the Deployed App: [HEROKU APP](https://albion-online-builds.herokuapp.com/)
 ### Link to the Trello Board: [TRELLO](https://trello.com/b/YDRm3IEk/albion-online-guides)

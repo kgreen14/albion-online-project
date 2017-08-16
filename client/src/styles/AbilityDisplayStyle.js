@@ -44,7 +44,7 @@ export const AbilityDisplayStyle = styled.div`
     font-size: 1.2rem;
     font-family: 'Open Sans';
     font-weight: 200;
-    color: white;
+    color: #6B799B;
     width: 60%;
     margin: 0 auto;
     text-align: left;
