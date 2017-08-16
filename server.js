@@ -20,6 +20,8 @@ connection.on('error', (err) => {
   console.log('Mongoose default connection error: ' + err);
 }); 
 
+
+
 app.use(bodyParser.json());
 
 app.use('/api/ability', AbilityController)
@@ -27,10 +29,12 @@ app.use('/api/item', ItemController)
 app.use('/api/build', BuildController)
 
 
-app.get('/', (req,res) => {
-  res.send('Hello Albion!')
-})
 
+app.use(express.static(__dirname + '/client/build/'));
+
+app.get('/', (req,res) => {
+    res.sendFile(__dirname + '/client/build/index.html')
+  })
 
 
 const PORT = process.env.PORT || 3001;
